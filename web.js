@@ -1,4 +1,4 @@
-class holaMundo extends HTMLElement{
+class componentes extends HTMLElement{
     constructor(){
         super();
         this.name;
@@ -23,11 +23,11 @@ class holaMundo extends HTMLElement{
     connectedCallback(){
         this.innerHTML = `<div>
             <h1>Hola ${this.name} ${this.surname}</h1>
-            <p>Esto es un párrafo</p>
+            <p>Ingenieria Web I</p>
         </div>`;
         this.style.color = "blue";
         this.style.fontFamily = "sans-serif";
     }
 }
 
-window.customElements.define("hola-mundo", holaMundo);
+window.customElements.define("nombre-saludo", componentes);
